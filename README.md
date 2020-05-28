@@ -16,10 +16,9 @@ function serviceCallUsingMutableRequest().
 
 I provided test cases for the following:
 
-For potential API calls:
-*An API call where the provided JSON has all data in a proper format
-*API calls where the provided JSON is either missing a field (eg. dealerCode), or the value is empty
-*An API call where the data is not properly formatted
+There are several tests for the API to deal with cases. There is a test for an API call where the provided JSON has all
+data in a proper format. There are API calls for where the provided JSON is either missing a field (eg. dealerCode), or
+the value is empty. There is also a test for An API call where the data is not properly formatted.
 
 There is a test for the activity indicator, testing that it is animating during viewDidLoad and stops animating during
 viewDidAppear.
@@ -29,4 +28,6 @@ supported modes.
 
 ### Comments:
 
-Given the provided assumptions the code could be much more testable and modular. Having the pseudo-network call
+Given the provided assumptions the code could be much more testable and modular. Having the pseudo-network call in the
+same file as the TokenViewController is not ideal, and separating it into a separate file would allow for easier
+testing.
