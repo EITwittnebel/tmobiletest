@@ -61,26 +61,16 @@ class objcTmobileTests: XCTestCase {
   
   // A test where the data retrieved from the API call is not in the proper form
   @objc func testbadData() {
-    let badData = """
-    {
-    ""DefinitionURL": "",
-    "AbstractSource": "Wikipedia",
-    "Entity": "",
-    "Definition": "",
-    "attribution": null,
-    "description": "Wikipedia",
-    "tab": "About",
-    }
-    """.data(using: .utf8)!
+    let badData = "".data(using: .utf8)!
     
-    let errorMessage = "There was an error retrieving the Token"
+    let expectedErrorMessage = "There was an error retrieving the Token"
     TapestryServices.shared()?._data = badData
     let storyboard = UIStoryboard(name: "Main", bundle: nil)
     let vc2 = storyboard.instantiateViewController(withIdentifier: "TokenViewController") as! TokenViewController
     vc2.loadView()
     vc2.viewDidLoad()
     vc2.viewDidAppear(true)
-    XCTAssertEqual(vc2.textLabel.text!, errorMessage)
+    XCTAssertEqual(vc2.textLabel.text!, expectedErrorMessage)
   }
   
   //A test where the JSON has proper formatting, but is missing the "pesudoUserID" dictionary entry
