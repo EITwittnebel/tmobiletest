@@ -17,9 +17,9 @@ function serviceCallUsingMutableRequest().
 I provided test cases for the following:
 
 For potential API calls:
--An API call where the provided JSON has all data in a proper format
--API calls where the provided JSON is either missing a field (eg. dealerCode), or the value is empty
--An API call where the data is not properly formatted
+*An API call where the provided JSON has all data in a proper format
+*API calls where the provided JSON is either missing a field (eg. dealerCode), or the value is empty
+*An API call where the data is not properly formatted
 
 There is a test for the activity indicator, testing that it is animating during viewDidLoad and stops animating during
 viewDidAppear.
@@ -27,4 +27,6 @@ viewDidAppear.
 I also provided a test for shouldAutorotate, and a test for supportedInterfaceOrientations, using mock booleans and
 supported modes.
 
+### Comments:
 
+Given the provided assumptions the code could be much more testable and modular. Having the pseudo-network call
