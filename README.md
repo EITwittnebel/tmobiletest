@@ -1,4 +1,4 @@
-# T-mobile Testing Assignment
+# T-Mobile Testing Assignment
 
 ## Assumptions
 
