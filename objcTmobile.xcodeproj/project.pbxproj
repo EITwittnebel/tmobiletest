@@ -17,6 +17,7 @@
 		3A20881B247F58510064F610 /* TokenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A20881A247F58510064F610 /* TokenViewController.m */; };
 		3A20881F247F587A0064F610 /* TapestryShell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A20881E247F587A0064F610 /* TapestryShell.m */; };
 		3A208821247F688E0064F610 /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A208820247F688E0064F610 /* Settings.m */; };
+		3A208826247FEB140064F610 /* Device.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A208825247FEB140064F610 /* Device.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		3A20881D247F58790064F610 /* TapestryShell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TapestryShell.h; sourceTree = "<group>"; };
 		3A20881E247F587A0064F610 /* TapestryShell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TapestryShell.m; sourceTree = "<group>"; };
 		3A208820247F688E0064F610 /* Settings.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Settings.m; sourceTree = "<group>"; };
+		3A208824247FEB140064F610 /* Device.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Device.h; sourceTree = "<group>"; };
+		3A208825247FEB140064F610 /* Device.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Device.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				3A20880A247F581F0064F610 /* objcTmobileTests.swift */,
+				3A208827247FED750064F610 /* New Group */,
 				3A20880C247F581F0064F610 /* Info.plist */,
 			);
 			path = objcTmobileTests;
@@ -130,8 +134,17 @@
 				3A208816247F58480064F610 /* TapestryServices.m */,
 				3A20881C247F586A0064F610 /* Settings.h */,
 				3A208820247F688E0064F610 /* Settings.m */,
+				3A208824247FEB140064F610 /* Device.h */,
+				3A208825247FEB140064F610 /* Device.m */,
 			);
 			path = "Mock Class Files";
+			sourceTree = "<group>";
+		};
+		3A208827247FED750064F610 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +254,7 @@
 				3A20881B247F58510064F610 /* TokenViewController.m in Sources */,
 				3A2087F4247F581C0064F610 /* AppDelegate.swift in Sources */,
 				3A2087F6247F581C0064F610 /* SceneDelegate.swift in Sources */,
+				3A208826247FEB140064F610 /* Device.m in Sources */,
 				3A208821247F688E0064F610 /* Settings.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

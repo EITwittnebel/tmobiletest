@@ -18,7 +18,6 @@
     self.ssoEnable = true;
     self.requestTimeoutSeconds = 10;
     self.featureEnabledDate = @"N/A";
-    self.actualDeviceID = @"100";
     self.kioskMode = true;
   }
   return self;

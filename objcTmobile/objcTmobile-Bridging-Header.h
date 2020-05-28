@@ -3,4 +3,7 @@
 //
 
 #import "TokenViewController.h"
+#import "TapestryShell.h"
 #import "TapestryServices.h"
+#import "Settings.h"
+#import "Device.h"

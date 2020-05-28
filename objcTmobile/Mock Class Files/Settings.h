@@ -14,7 +14,6 @@
 @property bool ssoEnable;
 @property int requestTimeoutSeconds;
 @property NSString *featureEnabledDate;
-@property NSString *actualDeviceID;
 @property bool kioskMode;
 
 @end

@@ -10,10 +10,12 @@
 #define TapestryShell_h
 #import <Foundation/Foundation.h>
 #import "Settings.h"
+#import "Device.h"
 
 @interface TapestryShell : NSObject
+
 @property Settings *settings;
-@property Settings *currentDevice;
+@property Device *currentDevice;
 
 + (TapestryShell *)sharedShell;
 

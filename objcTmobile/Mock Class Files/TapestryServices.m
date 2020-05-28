@@ -12,7 +12,6 @@
 @implementation TapestryServices
 
 static TapestryServices *sharedInstance = NULL;
-static int bleh = 0;
 
 + (TapestryServices *)shared {
   @synchronized(self) {

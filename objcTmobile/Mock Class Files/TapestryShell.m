@@ -17,6 +17,8 @@ static TapestryShell *sharedInstance = NULL;
     if (sharedInstance == NULL)
     {
       sharedInstance = [[self alloc] init];
+      sharedInstance.settings = [[Settings alloc] init];
+      sharedInstance.currentDevice = [[Device alloc] init];
     }
   }
   return sharedInstance;
